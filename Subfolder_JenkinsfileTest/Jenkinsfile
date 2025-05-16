@@ -1,0 +1,33 @@
+pipeline {
+	
+	agent any
+	
+	
+
+	stages {
+	
+		stage("Scripted Pipeline Test - Linked to Git Blazor Wasm Test Repo") {
+			steps {
+				echo 'Succesful connection to my custom Jenkinsfile. Hello, DevOps!'
+			}
+		}
+
+	}
+
+	post {
+		always {
+			
+		}
+		success {
+			
+
+		}
+		failure {
+			
+
+		}
+	}
+
+
+
+}
