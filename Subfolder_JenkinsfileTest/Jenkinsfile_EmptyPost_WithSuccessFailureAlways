@@ -1,0 +1,30 @@
+pipeline {
+	
+	agent any
+	
+	
+
+	stages {
+	
+		stage("Scripted Pipeline Test - Linked to Git Blazor Wasm Test Repo") {
+			steps {
+				echo 'Succesful connection to my custom Jenkinsfile. Hello, DevOps!'
+			}
+		}
+
+	}
+
+  // This will ALSO fail our build in Jenkins, 'cause we don't like empty post-sub-sections either
+  post {
+    always{
+      
+    }
+    success {
+
+    }
+    failure {
+
+    }
+  }
+
+}
